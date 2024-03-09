@@ -1,0 +1,6 @@
+local PlayerTable = {
+    ["Name"] = game:GetService("Players").LocalPlayer.Name,
+    ["Type"] = "Player"
+}
+
+game:GetService("ReplicatedStorage").Events.Inventory:FireServer("Load", PlayerTable)
