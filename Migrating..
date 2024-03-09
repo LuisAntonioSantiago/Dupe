@@ -1,0 +1,57 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "MIGRATIONAL",
+   LoadingTitle = "LOADING MIGRATIONAL..",
+   LoadingSubtitle = "by Antonio",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "MIGRATIONAL"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = true, 
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "Who the fuck gave you my Script? Anyways Find Code.",
+      FileName = "Key", 
+      SaveKey = false, 
+      GrabKeyFromSite = false, 
+      Key = {"0726"} 
+   }
+})
+
+local GenTab = Window:CreateTab("GENERAL", 16676225381)
+local Section = GenTab:CreateSection("GENERAL")
+local Button = GenTab:CreateButton({
+   Name = "infinite yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+local Button = GenTab:CreateButton({
+   Name = "Luis' Aimbot",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/LuisAntonioSantiago/Lock/main/Luis_Aimbot.lua'))()
+   end,
+})
+
+local RidgeTab = Window:CreateTab("RIDGEWAY", 16676225381)
+local Section = RidgeTab:CreateSection("RIDGEWAY")
+local Button = RidgeTab:CreateButton({
+   Name = "Ghost Dupe",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/LuisAntonioSantiago/Dupe/main/Dupe'))()
+   end,
+})
+local Button = RidgeTab:CreateButton({
+   Name = "Vehicle Unlock",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/LuisAntonioSantiago/Unlock/main/Unlock'))()
+   end,
+})
